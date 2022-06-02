@@ -1,0 +1,21 @@
+sudo su    (login as admin)
+yum update -y		(update security patches)
+yum install httpd -y	(start webservice to create webpage)
+
+cd /var/www/html	(goto the folder var>www>html)
+vi index.html		(create index.html to create webpage)(press i for insert code,write html code. for save and quit :wq. For quit without saving :q)
+<html><h1>Hello World</h1></html>	(html code for webpage)
+service httpd start	(make the webpage up and running)
+chkconfig on
+
+
+http://169.254.169.254/latest/meta-data/
+
+to open index.html command is cat index.html
+
+To login to private subnet use below command:Below ip is the private ip addr of the instance created with private subnet in the created vpc
+
+ssh ec2-user@10.0.2.222 -i selenium.pem
+
+
+
